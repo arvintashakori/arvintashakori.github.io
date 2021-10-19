@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a1c9ef8b.chunk.css",
-    "main.js": "/static/js/main.1fd76809.chunk.js",
-    "main.js.map": "/static/js/main.1fd76809.chunk.js.map",
+    "main.js": "/static/js/main.ae028087.chunk.js",
+    "main.js.map": "/static/js/main.ae028087.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b9819dae.js",
     "runtime-main.js.map": "/static/js/runtime-main.b9819dae.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
@@ -16,7 +16,7 @@
     "static/js/2.5704336b.chunk.js.LICENSE.txt": "/static/js/2.5704336b.chunk.js.LICENSE.txt",
     "static/media/Soumyajit-Behera.8ad3d59b.pdf": "/static/media/Soumyajit-Behera.8ad3d59b.pdf",
     "static/media/about.aee0f771.png": "/static/media/about.aee0f771.png",
-    "static/media/avatar.33f896b0.svg": "/static/media/avatar.33f896b0.svg",
+    "static/media/avatar.5852f40f.svg": "/static/media/avatar.5852f40f.svg",
     "static/media/blog.52102140.png": "/static/media/blog.52102140.png",
     "static/media/chatify.9373edda.png": "/static/media/chatify.9373edda.png",
     "static/media/codeEditor.ba945879.png": "/static/media/codeEditor.ba945879.png",
@@ -31,6 +31,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.5704336b.chunk.js",
     "static/css/main.a1c9ef8b.chunk.css",
-    "static/js/main.1fd76809.chunk.js"
+    "static/js/main.ae028087.chunk.js"
   ]
 }
