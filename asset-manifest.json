@@ -1,36 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.a1c9ef8b.chunk.css",
-    "main.js": "/static/js/main.d599639f.chunk.js",
-    "main.js.map": "/static/js/main.d599639f.chunk.js.map",
+    "main.js": "/static/js/main.25551adf.chunk.js",
+    "main.js.map": "/static/js/main.25551adf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b9819dae.js",
     "runtime-main.js.map": "/static/js/runtime-main.b9819dae.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.5704336b.chunk.js": "/static/js/2.5704336b.chunk.js",
-    "static/js/2.5704336b.chunk.js.map": "/static/js/2.5704336b.chunk.js.map",
+    "static/js/2.33588da2.chunk.js": "/static/js/2.33588da2.chunk.js",
+    "static/js/2.33588da2.chunk.js.map": "/static/js/2.33588da2.chunk.js.map",
     "static/js/3.2564e91b.chunk.js": "/static/js/3.2564e91b.chunk.js",
     "static/js/3.2564e91b.chunk.js.map": "/static/js/3.2564e91b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
     "static/css/main.a1c9ef8b.chunk.css.map": "/static/css/main.a1c9ef8b.chunk.css.map",
-    "static/js/2.5704336b.chunk.js.LICENSE.txt": "/static/js/2.5704336b.chunk.js.LICENSE.txt",
+    "static/js/2.33588da2.chunk.js.LICENSE.txt": "/static/js/2.33588da2.chunk.js.LICENSE.txt",
     "static/media/Soumyajit-Behera.8ad3d59b.pdf": "/static/media/Soumyajit-Behera.8ad3d59b.pdf",
     "static/media/about.aee0f771.png": "/static/media/about.aee0f771.png",
     "static/media/avatar.25c46d1f.png": "/static/media/avatar.25c46d1f.png",
-    "static/media/blog.52102140.png": "/static/media/blog.52102140.png",
-    "static/media/chatify.9373edda.png": "/static/media/chatify.9373edda.png",
-    "static/media/codeEditor.ba945879.png": "/static/media/codeEditor.ba945879.png",
-    "static/media/emotion.e92e314a.jpeg": "/static/media/emotion.e92e314a.jpeg",
     "static/media/style.css": "/static/media/pre.d4812f51.svg",
     "static/media/home-main.2a9fcc57.png": "/static/media/home-main.2a9fcc57.png",
-    "static/media/leaf.4c15d6eb.png": "/static/media/leaf.4c15d6eb.png",
-    "static/media/suicide.b72f1f9f.png": "/static/media/suicide.b72f1f9f.png"
+    "static/media/marl.46e08592.png": "/static/media/marl.46e08592.png",
+    "static/media/semipfl.3cceef63.png": "/static/media/semipfl.3cceef63.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b9819dae.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.5704336b.chunk.js",
+    "static/js/2.33588da2.chunk.js",
     "static/css/main.a1c9ef8b.chunk.css",
-    "static/js/main.d599639f.chunk.js"
+    "static/js/main.25551adf.chunk.js"
   ]
 }
