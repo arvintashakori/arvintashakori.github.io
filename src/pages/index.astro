@@ -10,68 +10,72 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">Arvin Tashakori</div>
+    <div class="text-3xl py-3 font-bold">Lead Software and Machine Learning Engineer at Texavie</div>
+    <div class="text-3xl py-3 font-bold">Ph.D Candidate at University of British Columbia</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+        An accomplished problem-solver with a knack for turning challenges into opportunities, I am a Lead Software and Machine Learning Engineer at Texavie and a Ph.D. Candidate at the University of British Columbia. With a 10+ year journey filled with strategic planning, team leadership, and software product management, I specialize in fields such as Computer Vision, Deep Learning, NLP, AI Security, Blockchain Development, and more. </div>
+        
+        
+      <text class="text-lg">
+        I did my MSc. in Electrical and Computer Engineering, my B.Sc.s (Double degree) in Electrical Engineering and Computer Science all from Sharif University of Technology (Ranked 1st in Iran). My doctoral thesis explores Human-Computer Interaction, focusing on Secure and Robust Hand Object Interaction Understanding using Wearable Sensing Textile. Currently, I'm advancing the frontier of Hand Pose Estimation using Wearable Sensing Textiles. Let's innovate together.
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a href="https://www.linkedin.com/in/arvin-tashakori-b2b707aa/" target="_blank" class="btn btn-outline ml-5">
+        My LinkedIn Profile
+      <a href="https://scholar.google.com/citations?user=8pFUPnQAAAAJ&hl=en" target="_blank" class="btn btn-outline ml-5">
+        My Google Scholar
+      </a>
+      <a href="https://drive.google.com/file/d/1S1faOxuaqILhodmSOE8ad9z2D91o1GmY/view?usp=sharing" target="_blank" class="btn btn-outline ml-5">
+        My Curriculum Vitae
       </a>
     </div>
-  </div>
-
+    <div>
+    <p></p>
+    <br>
+    <p></p>
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Selected Publications</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="SemiPFL: Personalized Semi-Supervised Federated Learning Framework for Edge Intelligence"
+    img="/semipfl.png"
+    desc=""
     url="#"
-    badge="NEW"
+    badge="IEEE Internet of Things Journal, 2023"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="Perspectives of users for a future interactive wearable system for upper extremity rehabilitation following stroke: a qualitative study"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc=""
     url="#"
+    badge="Journal of NeuroEngineering and Rehabilitation, 2023"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
+    title="A Flexible Sensor System for Lower Body Locomotion Estimation"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    desc=""
+    badge="2022 Biomedical Engineering Society Annual Meeting"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Survey on Multi-Agent Q-Learning frameworks for resource management in wireless sensor network"
+    img="/post_img.webp"
+    desc=""
+    url="https://arxiv.org/abs/2105.02371"
+    badge="arXiv, 2021"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Proposing an E-textile apparel for Hand Gesture Recognition and Arm Movement Estimation in Semi/Non-Line of Sight Environment"
+    img="/post_img.webp"
+    desc=""
+    url="https://arxiv.org/abs/2105.02371"
+    badge="SPIE Biophotonics, 2020"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  
 </BaseLayout>
