@@ -1,5 +1,5 @@
 ---
-const { title, img, met, desc1, desc2, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, img, met, desc1, desc2, desc3, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "@astrojs/image/components";
 ---
 
@@ -29,6 +29,7 @@ import { Image } from "@astrojs/image/components";
         </h1>
         <p class="py-1 text-1xl">{desc1}</p>
         <p class="py-1 text-1xl">{desc2}</p>
+        <p class="py-1 text-1xl">{desc3}</p>
         <div class="card-actions justify-end">
           {tags && tags.map((tag, index) => <div key={index} class="badge badge-outline">{tag}</div>)}
         </div>
