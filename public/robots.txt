@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arvintashakori.com/sitemap-index.xml
+Sitemap: https://arvintashakori.github.io/sitemap-index.xml
