@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+  <div class="text-3xl w-full font-bold mb-2">News and blogs</div><br>
+    </div>
+    <HorizontalCard
+      title="CTV News Morning Live featured our glove paper and its applications (Jan. 2024)"
+      img="/1.png"
+      url="https://bc.ctvnews.ca/video/c2852771-smart-glove-could-help-stroke-survivors?binId=1.1184756"
+    />
+    <div class="divider my-0"></div>
+    <!-- </div> -->
+    <HorizontalCard
+      title="CTV News featured our glove paper and its applications on post stroke rehabilitation (Jan. 2024)"
+      img="/2.jpg"
+      url="https://bc.ctvnews.ca/video/c2850875--smart-glove--helping-stroke-patients"
+    />
+    <div class="divider my-0"></div>
+    <!-- </div> -->
+    <HorizontalCard
+      title="Listen to my discussion with Jeff and Bill on Radio NL about the impact of our glove work (Jan. 2024)"
+      img="/3.png"
+      url="https://soundcloud.com/user-965676831/jeff-bill-arvin-tashakori-january-17"
+    />
+    <div class="divider my-0"></div>
+  <!-- </div> -->
+  <HorizontalCard
+    title="Trilled to see many news anchors, blogs and tweets has featured our work, please visit here (Jan. 2024)"
+    met=1
+    url="https://www.nature.com/articles/s42256-023-00780-9/metrics"
+  />
+  <div class="divider my-0"></div>
+<!-- </div> -->
+<HorizontalCard
+  title="Happy to see our glove work has been featured in Interesting Engineering (Jan. 2024)"
+  img="/4.jpeg"
+  url="https://interestingengineering.com/innovation/stroke-survivors-regain-grip-on-life-with-game-changing-smart-glove"
+/>
+<div class="divider my-0"></div>
+<!-- </div> -->
+<HorizontalCard
+  title="Happy to see our glove work has been featured in UBC News (Jan. 2024)"
+  img="/6.jpeg"
+  url="https://interestingengineering.com/innovation/stroke-survivors-regain-grip-on-life-with-game-changing-smart-glove"
+/>
+<div class="divider my-0"></div>
+<!-- </div> -->
+<HorizontalCard
+  title="Excited to share that our glove paper has been published in Nature Machine Intelligence (Jan. 2024)"
+  img="/5.jpeg"
+  url="https://www.nature.com/articles/s42256-023-00780-9"
+/>
+</BaseLayout>
