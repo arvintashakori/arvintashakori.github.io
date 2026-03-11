@@ -3,136 +3,160 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-5xl font-bold">Arvin Tashakori</div>
-    <div class="text-3xl py-3 font-bold">Senior Computer Vision R&D Engineer, Koh Young Research Canada, Koh Young Technology Inc.</div>
-    <div class="text-3xl py-3 font-bold">Postdoctural Studies in Engineering - Machine Learning at Stanford University</div>
-    <div class="text-3xl py-3 font-bold">Doctor of Philosophy (Ph.D) in Electrical and Computer Engineering from University of British Columbia</div>
+    <div class="text-5xl font-bold">Arvin Tashakori, Ph.D.</div>
+    <div class="text-3xl py-3 font-bold">
+      Senior Computer Vision R&D Engineer, Koh Young Research Canada, Koh Young
+      Technology Inc.
+    </div>
+    <div class="text-3xl py-3 font-bold">
+      Postdoctural Studies in Engineering - Machine Learning at Stanford
+      University
+    </div>
+    <div class="text-3xl py-3 font-bold">
+      Doctor of Philosophy (Ph.D) in Electrical and Computer Engineering from
+      University of British Columbia
+    </div>
     <div class="py-2">
       <text class="text-lg">
+        <p>
+          As an accomplished Software and Machine Learning Engineer and
+          Researcher, I bring over a decade of experience from both the tech
+          industry and academia. Holding a PhD from the University of British
+          Columbia, postdoctoral research experience at Stanford University, my
+          career is marked by a steadfast commitment to solving complex problems
+          and delivering tangible results in high-stakes projects.
+        </p><br />
 
-
-        <p>As an accomplished Software and Machine Learning Engineer and Researcher, I bring over a decade of experience from both the tech industry and academia. Holding a PhD from the University of British Columbia, postdoctoral research experience at Stanford University, my career is marked by a steadfast commitment to solving complex problems and delivering tangible results in high-stakes projects.
-        </p><br>
-
-        <p>My expertise spans a wide array of fields, including Computer Vision, Robotics, Wearable Electronics, Deep Learning, Natural Language Processing, large language models, Generative AI, Secure and Trustworthy AI, and emerging technologies like Web3. I am particularly adept in the realms of Software, Firmware, and Hardware Development, with a strong focus on Wearables, Edge Computing, Consumer Electronics, and the Internet of Things, especially in the Health sector.
-        </p><br>
-    </div>
-    <br>
-    <div>
-      <div class="text-3xl w-full font-bold mb-2">Recent News</div>
-
+        <p>
+          My expertise spans a wide array of fields, including Computer Vision,
+          Robotics, Wearable Electronics, Deep Learning, Natural Language
+          Processing, large language models, Generative AI, Secure and
+          Trustworthy AI, and emerging technologies like Web3. I am particularly
+          adept in the realms of Software, Firmware, and Hardware Development,
+          with a strong focus on Wearables, Edge Computing, Consumer
+          Electronics, and the Internet of Things, especially in the Health
+          sector.
+        </p><br />
+      </text>
+      <br />
+      <div>
+        <div class="text-3xl w-full font-bold mb-2">Recent News</div>
       </div>
       <div class="divider my-0"></div>
       <!-- </div> -->
-    <HorizontalCard
-      title="Thrilled to see that our Nature Machine Intelligence paper was featured in Science Robotics as Editor's Choice (Feb. 2024)"
-      img="/s.png"
-      url="https://www.science.org/doi/full/10.1126/scirobotics.ado6856"
-    />
+      <HorizontalCard
+        title="Thrilled to see that our Nature Machine Intelligence paper was featured in Science Robotics as Editor's Choice (Feb. 2024)"
+        img="/s.png"
+        url="https://www.science.org/doi/full/10.1126/scirobotics.ado6856"
+      />
       <div class="divider my-0"></div>
       <!-- </div> -->
-    <HorizontalCard
-      title="Excited to see that our Nature Machine Intelligence paper was featured in Physics World (Feb. 2024)"
-      img="/5.jpeg"
-      url="https://physicsworld.com/a/smart-glove-tracks-hand-movements-with-unprecedented-accuracy/"
-    />
-    <div class="divider my-0"></div>
-     <!-- </div> -->
-     <HorizontalCard
-     title="North Shore News featured our works and its impact on post stroke recovery (Feb. 2024)"
-     img="/7.jpeg"
-     url="https://www.nsnews.com/local-news/smart-gloves-could-transform-therapy-for-stroke-patients-ubc-researcher-says-8302743"
-   />
-   <div class="divider my-0"></div>
-    <!-- </div> -->
-    <HorizontalCard
-      title="CTV News Morning Live featured our glove paper and its applications (Jan. 2024)"
-      img="/1.png"
-      url="https://bc.ctvnews.ca/video/c2852771-smart-glove-could-help-stroke-survivors?binId=1.1184756"
-    />
-    <div class="divider my-0"></div>
-    <!-- </div> -->
-    <HorizontalCard
-      title="Yara Leadership Society, featured our work (Jan. 2024)"
-      img="/0.jpeg"
-      url="https://www.linkedin.com/feed/update/urn:li:activity:7158111660904173568/"
-    />
-    <div class="divider my-0"></div>
-    <!-- </div> -->
-    <HorizontalCard
-      title="CTV News featured our glove paper and its applications on post stroke rehabilitation (Jan. 2024)"
-      img="/2.jpg"
-      url="https://bc.ctvnews.ca/video/c2850875--smart-glove--helping-stroke-patients"
-    />
-    <div class="divider my-0"></div>
-    <!-- </div> -->
-    <HorizontalCard
-      title="Listen to my discussion with Jeff and Bill on Radio NL about the impact of our glove work (Jan. 2024)"
-      img="/3.png"
-      url="https://soundcloud.com/user-965676831/jeff-bill-arvin-tashakori-january-17"
-    />
-    <div class="divider my-0"></div>
-  <!-- </div> -->
-  <HorizontalCard
-    title="Trilled to see many news anchors, blogs and tweets has featured our work, please visit here (Jan. 2024)"
-    met=1
-    url="https://www.nature.com/articles/s42256-023-00780-9/metrics"
-  />
-  <div class="divider my-0"></div>
-<!-- </div> -->
-<HorizontalCard
-  title="Happy to see our glove work has been featured in Interesting Engineering (Jan. 2024)"
-  img="/4.jpeg"
-  url="https://interestingengineering.com/innovation/stroke-survivors-regain-grip-on-life-with-game-changing-smart-glove"
-/>
-<div class="divider my-0"></div>
-<!-- </div> -->
-<HorizontalCard
-  title="Happy to see our glove work has been featured in UBC News (Jan. 2024)"
-  img="/6.jpeg"
-  url="https://news.ubc.ca/2024/01/16/smart-glove-for-stroke-patients/"
-/>
-</div>
-    
+      <HorizontalCard
+        title="Excited to see that our Nature Machine Intelligence paper was featured in Physics World (Feb. 2024)"
+        img="/5.jpeg"
+        url="https://physicsworld.com/a/smart-glove-tracks-hand-movements-with-unprecedented-accuracy/"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="North Shore News featured our works and its impact on post stroke recovery (Feb. 2024)"
+        img="/7.jpeg"
+        url="https://www.nsnews.com/local-news/smart-gloves-could-transform-therapy-for-stroke-patients-ubc-researcher-says-8302743"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="CTV News Morning Live featured our glove paper and its applications (Jan. 2024)"
+        img="/1.png"
+        url="https://bc.ctvnews.ca/video/c2852771-smart-glove-could-help-stroke-survivors?binId=1.1184756"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Yara Leadership Society, featured our work (Jan. 2024)"
+        img="/0.jpeg"
+        url="https://www.linkedin.com/feed/update/urn:li:activity:7158111660904173568/"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="CTV News featured our glove paper and its applications on post stroke rehabilitation (Jan. 2024)"
+        img="/2.jpg"
+        url="https://bc.ctvnews.ca/video/c2850875--smart-glove--helping-stroke-patients"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Listen to my discussion with Jeff and Bill on Radio NL about the impact of our glove work (Jan. 2024)"
+        img="/3.png"
+        url="https://soundcloud.com/user-965676831/jeff-bill-arvin-tashakori-january-17"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Trilled to see many news anchors, blogs and tweets has featured our work, please visit here (Jan. 2024)"
+        met="1"
+        url="https://www.nature.com/articles/s42256-023-00780-9/metrics"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Happy to see our glove work has been featured in Interesting Engineering (Jan. 2024)"
+        img="/4.jpeg"
+        url="https://interestingengineering.com/innovation/stroke-survivors-regain-grip-on-life-with-game-changing-smart-glove"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Happy to see our glove work has been featured in UBC News (Jan. 2024)"
+        img="/6.jpeg"
+        url="https://news.ubc.ca/2024/01/16/smart-glove-for-stroke-patients/"
+      />
+    </div>
+
     <div>
-    <div class="text-3xl w-full font-bold mb-2">Selected Projects</div>
-    <HorizontalCard
-    title="Capturing Complex Hand Movements and Object Interactions Using Machine Learning Powered Stretchable Smart Textile Gloves"
-    img="/smartglove.png"
-    desc1="Nature Machine Intelligence 2024"
-    desc2="[Arvin Tashakori], Zenan Jiang, Amir Servati, Saeid Soltanian, Harishkumar Narayana, Katherine Le, Caroline Nakayama, Chieh-ling Yang, Z Jane Wang, Janice J Eng, Peyman Servati"
-    desc3="Ranked 1st out of 144 journals in the category ''Computer Science, Artificial intelligence'' and 1st out of 113 journals in the category ''Computer Science, Interdisciplinary Applications''. Impact Factor: 25.898. Acceptance Rate: 6%"
-    desc4="Featured in Physics World, CTV News, CTV News Morning Live, NS News, UBC News, CHNL, North Shore News, Virgin radio, CKNW Jill Bennett, Science Daily, Interesting Engineering, Tech Times and more"
-    url="https://www.nature.com/articles/s42256-023-00780-9"
-    badge="NEW"
-    met=0
-  />
-  <div class="divider my-0"></div>
-  <!-- </div> -->
-  <HorizontalCard
-    title="Intelligent Knee Sleeves: A Real-time Multimodal Dataset for 3D Lower Body Motion Estimation Using Smart Textile"
-    img="/knee_sleeve.png"
-    desc1="Conference on Neural Information Processing Systems (NIPS), 2023"
-    desc2="Wenwen Zhang, [Arvin Tashakori], Zenan Jiang, Amir Servati, Harishkumar Narayana, Saeid Soltanian, Rou Yi Yeap, Meng Han Ma, Lauren Toy, Peyman Servati"
-    desc3="Top 3 worldwide artificial intelligence conferences. Acceptance Rate: 24.4%"
-    url="https://openreview.net/forum?id=T3FKjN4p8d"
-    met=0
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="SemiPFL: Personalized Semi-Supervised Federated Learning Framework for Edge Intelligence"
-    img="/semipfl.png"
-    desc1="IEEE Internet of Things Journal, 2023"
-    desc2="[Arvin Tashakori], Wenwen Zhang, Z Jane Wang, Peyman Servati"
-    desc3="Top journal for internet of things and artificial intelligence. Impact Factor: 10.6"
-    url="https://arvintashakori.github.io/SemiPFLProject/"
-    met=0
-  />
+      <div class="text-3xl w-full font-bold mb-2">Selected Projects</div>
+      <HorizontalCard
+        title="Capturing Complex Hand Movements and Object Interactions Using Machine Learning Powered Stretchable Smart Textile Gloves"
+        img="/smartglove.png"
+        desc1="Nature Machine Intelligence 2024"
+        desc2="[Arvin Tashakori], Zenan Jiang, Amir Servati, Saeid Soltanian, Harishkumar Narayana, Katherine Le, Caroline Nakayama, Chieh-ling Yang, Z Jane Wang, Janice J Eng, Peyman Servati"
+        desc3="Ranked 1st out of 144 journals in the category ''Computer Science, Artificial intelligence'' and 1st out of 113 journals in the category ''Computer Science, Interdisciplinary Applications''. Impact Factor: 25.898. Acceptance Rate: 6%"
+        desc4="Featured in Physics World, CTV News, CTV News Morning Live, NS News, UBC News, CHNL, North Shore News, Virgin radio, CKNW Jill Bennett, Science Daily, Interesting Engineering, Tech Times and more"
+        url="https://www.nature.com/articles/s42256-023-00780-9"
+        badge="NEW"
+        met="0"
+      />
+      <div class="divider my-0"></div>
+      <!-- </div> -->
+      <HorizontalCard
+        title="Intelligent Knee Sleeves: A Real-time Multimodal Dataset for 3D Lower Body Motion Estimation Using Smart Textile"
+        img="/knee_sleeve.png"
+        desc1="Conference on Neural Information Processing Systems (NIPS), 2023"
+        desc2="Wenwen Zhang, [Arvin Tashakori], Zenan Jiang, Amir Servati, Harishkumar Narayana, Saeid Soltanian, Rou Yi Yeap, Meng Han Ma, Lauren Toy, Peyman Servati"
+        desc3="Top 3 worldwide artificial intelligence conferences. Acceptance Rate: 24.4%"
+        url="https://openreview.net/forum?id=T3FKjN4p8d"
+        met="0"
+      />
+      <div class="divider my-0"></div>
+      <HorizontalCard
+        title="SemiPFL: Personalized Semi-Supervised Federated Learning Framework for Edge Intelligence"
+        img="/semipfl.png"
+        desc1="IEEE Internet of Things Journal, 2023"
+        desc2="[Arvin Tashakori], Wenwen Zhang, Z Jane Wang, Peyman Servati"
+        desc3="Top journal for internet of things and artificial intelligence. Impact Factor: 10.6"
+        url="https://arvintashakori.github.io/SemiPFLProject/"
+        met="0"
+      />
+    </div>
+  </div>
 </BaseLayout>

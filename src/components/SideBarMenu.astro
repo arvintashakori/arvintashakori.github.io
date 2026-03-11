@@ -4,43 +4,56 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
 ---
 
 <ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href="/projects">Projects and Papers</a></li>
-    <li><a class="py-3 text-base" id="news" href="/news">News and Blogs</a></li>
-    <li><a class="py-3 text-base" id="cv" href="/cv">Curriculum Vitae</a></li>
-    <!-- <li><a class="py-3 text-base" id="blog" href="/blog/">News and blogs</a></li> -->
+  <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
+  <li>
+    <a class="py-3 text-base" id="projects" href="/projects"
+      >Projects and Papers</a
+    >
+  </li>
+  <li><a class="py-3 text-base" id="news" href="/news">News and Blogs</a></li>
+  <li><a class="py-3 text-base" id="cv" href="/cv">Curriculum Vitae</a></li>
+  <!-- <li><a class="py-3 text-base" id="blog" href="/blog/">News and blogs</a></li> -->
+  <li>
+    <a
+      class="py-3 text-base"
+      href="https://drive.google.com/file/d/1TuQSuhT68zy9gGUOTbh_vtdh5bO1sik0/view?usp=share_link"
+      target="_blank"
+      referrerpolicy="no-referrer-when-downgrade">Download CV (Industrial)</a
+    >
     <li>
+      <a
+        class="py-3 text-base"
+        href="https://drive.google.com/file/d/1Hl69xR--7J9Pc-GDjNDci_BjEq941Ul3/view?usp=share_link"
+        target="_blank"
+        referrerpolicy="no-referrer-when-downgrade">Download CV (Academic)</a
+      >
+      <li>
         <a
-            class="py-3 text-base"
-            href="https://drive.google.com/file/d/1c7di7cYwitCTKa7MOI1qZ7WQWjShm2JC/view?usp=sharing"
-            target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Download CV (Industrial)</a
+          class="py-3 text-base"
+          href="https://scholar.google.com/citations?user=8pFUPnQAAAAJ&hl=en"
+          target="_blank"
+          referrerpolicy="no-referrer-when-downgrade">Google Scholar</a
         >
-    <li>
-        <a
-            class="py-3 text-base"
-            href="https://drive.google.com/file/d/1TPhjCfahFOQ6dbnBSPdARgQ-1e1lIAPX/view?usp=sharing"
-            target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Download CV (Academic)</a
-        >
-    <li>
-        <a
-            class="py-3 text-base"
-            href="https://scholar.google.com/citations?user=8pFUPnQAAAAJ&hl=en"
-            target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Google Scholar</a
-        >
-    
-    <li>
-        <a
+
+        <li>
+          <a
             class="py-3 text-base"
             href="mailto:arvin.ehsan.tashakori@gmail.com"
             target="_blank"
             referrerpolicy="no-referrer-when-downgrade">Contact Me</a
-        >
-</ul>
+          >
+        </li>
 
-<script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
-const activeItemElem = document.getElementById(sideBarActiveItemID);
-activeItemElem && activeItemElem.classList.add(activeClass);
-</script>
+        <script
+          define:vars={{
+            sideBarActiveItemID: sideBarActiveItemID,
+            activeClass: activeClass,
+          }}
+        >
+          const activeItemElem = document.getElementById(sideBarActiveItemID);
+          activeItemElem && activeItemElem.classList.add(activeClass);
+        </script>
+      </li>
+    </li>
+  </li>
+</ul>
